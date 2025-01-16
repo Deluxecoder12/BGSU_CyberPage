@@ -1,6 +1,6 @@
 # BGSU CyberPage
 
-A React-based website for BGSU's Cybersecurity Department,
+A React-based website for BGSU's Cybersecurity Department.
 
 ## Project Overview
 The BFP Cyber project is an innovative initiative aimed at enhancing cybersecurity education and workforce development, fostering inclusivity, and providing accessible pathways into cybersecurity.
@@ -31,16 +31,34 @@ npm install
 npm start
 ```
 
+5. Build for production
+```bash
+npm run build
+```
+
+6. Deploy to Github Pages
+```bash
+npm run deploy
+```
+
 ## Project Structure
 BGSU_CyberPage/
 ├── my-react-app/          # React application
 │   ├── public/           # Static files
-│   │   ├── images/      # Image assets
-│   │   └── index.html
+│   │   ├── images/      # Public images
+│   │   └── index.html   # HTML template
 │   └── src/             # Source files
 │       ├── components/  # React components
-│       ├── App.js
-│       └── index.js
+│       │   ├── ActivityCarousel/
+│       │   ├── Footer/
+│       │   ├── SummerCamp/
+│       │   ├── SpringCamp/
+│       │   └── Workshops/
+│       ├── images/      # Component images
+│       ├── pages/       # Page components
+│       ├── utils/       # Utility functions
+│       ├── App.js       # Main application
+│       └── index.js     # Entry point
 └── README.md
 
 ## Technologies used
@@ -49,3 +67,17 @@ BGSU_CyberPage/
 3. CSS3
 4. Node.js
 5. HTML
+
+## Live Demo
+Visit the website: https://deluxecoder12.github.io/BGSU_CyberPage/#/
+
+### This project is maintained by the BGSU Computer Science Department.
+
+## Contact
+Department Website: [BGSU Computer Science](https://www.bgsu.edu/arts-and-sciences/computer-science.html)
+
+## Acknowledgments
+BGSU Computer Science Department
+BGSU Cybersecurity Program
+Project Contributors
+- Sakar Joshi
