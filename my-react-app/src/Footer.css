@@ -1,0 +1,139 @@
+/* Footer.css */
+footer {
+    width: 100%;
+    color: white;
+  }
+  
+  .footer-main {
+    background-color: #4F2C1D; /* BGSU Brown */
+    padding: 40px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+  }
+  
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .bgsu-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .university-info {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  .phone-link {
+    color: #FE5000; /* BGSU Orange */
+    text-decoration: none;
+  }
+  
+  .make-gift-link {
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .links-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .links-column a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .links-column a:hover {
+    text-decoration: underline;
+  }
+  
+  .contrast-toggle {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .toggle-btn {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .footer-report {
+    background-color: #FE5000; /* BGSU Orange */
+    padding: 20px 0;
+  }
+  
+  .report-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .report-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  
+  .report-content p {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  
+  .report-button {
+    background-color: white;
+    color: #FE5000;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer-links {
+      grid-template-columns: 1fr;
+    }
+  
+    .report-container {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+  }
