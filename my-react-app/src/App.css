@@ -37,6 +37,9 @@
 
 .bgsu-logo{
   width: 10rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
 }
 
 .title {
@@ -90,12 +93,6 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.bgsu-logo {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
 }
 
 .university-info {
@@ -207,6 +204,12 @@ footer {
 }
 
 /* Activities section styling */
+.activities{
+  justify-self: center;
+  width: 50vw;
+  min-width: fit-content;
+}
+
 .activities ul {
   list-style: none;
   padding: 0;
