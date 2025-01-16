@@ -2,6 +2,9 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import './ActivityCarousel.css';
+import summerCampImg from '../../images/CODE4hermentors-web.jpg';
+import springCampImg from '../../images/Julia-Grummel-web.jpg';
+import workshopsImg from '../../images/Sankardas-Roy.jpg';
 
 function ActivityCarousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -13,19 +16,19 @@ function ActivityCarousel() {
       title: 'Summer Camp',
       description: 'Join our intensive summer cybersecurity program',
       link: '/summer-camp',
-      image: '/images/CODE4hermentors-web.jpg'
+      image: summerCampImg
     },
     {
       title: 'Spring Camp',
       description: 'Explore cybersecurity during spring break',
       link: '/spring-camp',
-      image: '/images/Julia-Grummel-web.jpg'
+      image: springCampImg
     },
     {
       title: 'Workshops',
       description: 'Participate in focused cybersecurity workshops',
       link: '/workshops',
-      image: '/images/Sankardas-Roy.jpg'
+      image: workshopsImg
     }
   ];
 

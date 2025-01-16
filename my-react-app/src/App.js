@@ -1,10 +1,10 @@
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { HashRouter as Router, Route, Routes} from 'react-router-dom';
 import './App.css';
-import SummerCamp from './SummerCamp';
-import SpringCamp from './SpringCamp';
-import Workshops from './Workshops';
-import ActivityCarousel from './ActivityCarousel';
-import Footer from './Footer';
+import SummerCamp from './components/SummerCamp/SummerCamp';
+import SpringCamp from './components/SpringCamp/SpringCamp';
+import Workshops from './components/Workshops/Workshops';
+import ActivityCarousel from './components/ActivityCarousel/ActivityCarousel';
+import Footer from './components/Footer/Footer';
 
 // Create a Home component for the main page content
 function Home() {
