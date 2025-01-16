@@ -1,27 +1,268 @@
 .App {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
 }
 
-.App-header {
-  background-color: #FE5000;
+/* Header Styling */
+.page-header {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #FE5000; /* BGSU Orange */
   color: white;
-  padding: 2rem;
-  text-align: center;
-  border-radius: 8px;
   margin-bottom: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
-  padding: 1.5rem;
-  background: white;
-  border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-h2 {
+.header-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+.separator {
+  color: white;
+  font-weight: normal;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Take full height of parent */
+}
+
+.bgsu-logo{
+  width: 10rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.title-large {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.main-nav {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #4F2C1D; /* BGSU Brown */
+}
+
+.main-nav .nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* Footer.css */
+footer {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  color: white;
+}
+
+.footer-main {
+  background-color: #4F2C1D; /* BGSU Brown */
+  padding: 40px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bgsu-logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.university-info {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.phone-link {
+  color: #FE5000; /* BGSU Orange */
+  text-decoration: none;
+}
+
+.make-gift-link {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.links-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.links-column a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.links-column a:hover {
+  text-decoration: underline;
+}
+
+.contrast-toggle {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.toggle-btn {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-report {
+  background-color: #4F2C1D;
+  padding: 20px 0;
+}
+
+.report-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.report-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.report-content p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.report-button {
+  background-color: #FE5000;
+  color: #FFF;
+  padding: 12px 24px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+
+  .report-container {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+/* Activities section styling */
+.activities ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.activities li {
+  margin: 0.5rem 0;
+}
+
+.activities a {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #FE5000;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.activities a:hover {
+  background-color: #4F2C1D;
+  transform: translateY(-2px);
+}
+
+/* Resources section styling */
+.resources ul {
+  list-style: none;
+  padding: 0;
+}
+
+.resources a {
+  color: #FE5000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.resources a:hover {
   color: #4F2C1D;
-  margin-bottom: 1rem;
+}
+
+/* Back navigation for sub-pages */
+.back-navigation {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.back-link {
+  color: #FE5000;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #4F2C1D;
 }
