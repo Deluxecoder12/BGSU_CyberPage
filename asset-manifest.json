@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/BGSU_CyberPage/static/css/main.0df1be77.css",
+    "main.js": "/BGSU_CyberPage/static/js/main.72a6b29b.js",
+    "static/js/488.af104311.chunk.js": "/BGSU_CyberPage/static/js/488.af104311.chunk.js",
+    "index.html": "/BGSU_CyberPage/index.html",
+    "main.0df1be77.css.map": "/BGSU_CyberPage/static/css/main.0df1be77.css.map",
+    "main.72a6b29b.js.map": "/BGSU_CyberPage/static/js/main.72a6b29b.js.map",
+    "488.af104311.chunk.js.map": "/BGSU_CyberPage/static/js/488.af104311.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0df1be77.css",
+    "static/js/main.72a6b29b.js"
+  ]
+}
