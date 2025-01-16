@@ -62,8 +62,6 @@ function ActivityCarousel() {
     return () => clearInterval(interval);
   }, [prevSlide, nextSlide]);
 
-  
-
   return (
     <div className="carousel-container">
       <div className="carousel-track">
