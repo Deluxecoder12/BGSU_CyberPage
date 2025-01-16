@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/BGSU_CyberPage/static/css/main.0df1be77.css",
-    "main.js": "/BGSU_CyberPage/static/js/main.33c18c05.js",
+    "main.css": "/BGSU_CyberPage/static/css/main.7efcbb42.css",
+    "main.js": "/BGSU_CyberPage/static/js/main.01eacb0d.js",
     "static/js/488.af104311.chunk.js": "/BGSU_CyberPage/static/js/488.af104311.chunk.js",
     "static/media/CODE4hermentors-web.jpg": "/BGSU_CyberPage/static/media/CODE4hermentors-web.c91fa278e54c08270c8a.jpg",
     "static/media/Julia-Grummel-web.jpg": "/BGSU_CyberPage/static/media/Julia-Grummel-web.a7a1c270f93c868c99fb.jpg",
     "static/media/Sankardas-Roy.jpg": "/BGSU_CyberPage/static/media/Sankardas-Roy.27ba00fccb5262c48f22.jpg",
+    "static/media/footer-background.jpg": "/BGSU_CyberPage/static/media/footer-background.fc335d28e758d527c26f.jpg",
+    "static/media/bgsu-logo-rev.svg": "/BGSU_CyberPage/static/media/bgsu-logo-rev.c8be9954ac1c17b619d1198cf4d4e635.svg",
     "index.html": "/BGSU_CyberPage/index.html",
-    "main.0df1be77.css.map": "/BGSU_CyberPage/static/css/main.0df1be77.css.map",
-    "main.33c18c05.js.map": "/BGSU_CyberPage/static/js/main.33c18c05.js.map",
+    "main.7efcbb42.css.map": "/BGSU_CyberPage/static/css/main.7efcbb42.css.map",
+    "main.01eacb0d.js.map": "/BGSU_CyberPage/static/js/main.01eacb0d.js.map",
     "488.af104311.chunk.js.map": "/BGSU_CyberPage/static/js/488.af104311.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0df1be77.css",
-    "static/js/main.33c18c05.js"
+    "static/css/main.7efcbb42.css",
+    "static/js/main.01eacb0d.js"
   ]
 }
