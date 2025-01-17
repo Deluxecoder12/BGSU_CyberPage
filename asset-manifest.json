@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/BGSU_CyberPage/static/css/main.7efcbb42.css",
-    "main.js": "/BGSU_CyberPage/static/js/main.01eacb0d.js",
+    "main.css": "/BGSU_CyberPage/static/css/main.6a939095.css",
+    "main.js": "/BGSU_CyberPage/static/js/main.b357b236.js",
     "static/js/488.af104311.chunk.js": "/BGSU_CyberPage/static/js/488.af104311.chunk.js",
+    "static/media/inclusive-workforce.jpg": "/BGSU_CyberPage/static/media/inclusive-workforce.05f627c85d0adc5b097a.jpg",
+    "static/media/empower-professionals.jpg": "/BGSU_CyberPage/static/media/empower-professionals.cdd4799e95dede8ee754.jpg",
     "static/media/CODE4hermentors-web.jpg": "/BGSU_CyberPage/static/media/CODE4hermentors-web.c91fa278e54c08270c8a.jpg",
+    "static/media/enhance-education.jpg": "/BGSU_CyberPage/static/media/enhance-education.f5d2ff1ebd4ab127e24e.jpg",
     "static/media/Julia-Grummel-web.jpg": "/BGSU_CyberPage/static/media/Julia-Grummel-web.a7a1c270f93c868c99fb.jpg",
     "static/media/Sankardas-Roy.jpg": "/BGSU_CyberPage/static/media/Sankardas-Roy.27ba00fccb5262c48f22.jpg",
+    "static/media/protect-infrastructure.jpg": "/BGSU_CyberPage/static/media/protect-infrastructure.93199b82c2200ff3ddc8.jpg",
+    "static/media/learning-communities.jpg": "/BGSU_CyberPage/static/media/learning-communities.77d3e791decfa94c3186.jpg",
     "static/media/footer-background.jpg": "/BGSU_CyberPage/static/media/footer-background.fc335d28e758d527c26f.jpg",
+    "static/media/skills-gap.jpg": "/BGSU_CyberPage/static/media/skills-gap.bffe808a9c8788a42acc.jpg",
     "static/media/bgsu-logo-rev.svg": "/BGSU_CyberPage/static/media/bgsu-logo-rev.c8be9954ac1c17b619d1198cf4d4e635.svg",
     "index.html": "/BGSU_CyberPage/index.html",
-    "main.7efcbb42.css.map": "/BGSU_CyberPage/static/css/main.7efcbb42.css.map",
-    "main.01eacb0d.js.map": "/BGSU_CyberPage/static/js/main.01eacb0d.js.map",
+    "main.6a939095.css.map": "/BGSU_CyberPage/static/css/main.6a939095.css.map",
+    "main.b357b236.js.map": "/BGSU_CyberPage/static/js/main.b357b236.js.map",
     "488.af104311.chunk.js.map": "/BGSU_CyberPage/static/js/488.af104311.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7efcbb42.css",
-    "static/js/main.01eacb0d.js"
+    "static/css/main.6a939095.css",
+    "static/js/main.b357b236.js"
   ]
 }
