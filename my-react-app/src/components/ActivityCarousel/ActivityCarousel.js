@@ -181,6 +181,7 @@ function ActivityCarousel() {
       onDragStart={(e) => e.preventDefault()}
     >
       {/* Container for carousel slides */}
+      <h2 className="title">Activities</h2>
       <div 
         ref={carouselTrackRef}
         className="carousel-track"

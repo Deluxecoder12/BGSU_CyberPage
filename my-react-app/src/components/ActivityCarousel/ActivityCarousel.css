@@ -1,8 +1,15 @@
+.title{
+    margin: 0;
+    margin-bottom: 3rem;
+    text-align: left;
+    font-size: 2.5rem;
+}
+
 .carousel-container {
     position: relative;
     width: 100%;
-    max-width: 1200px;
     height: 400px;
+    min-height: fit-content;
     margin: 0 auto;
     overflow: hidden;
     user-select: none; /* Prevent text selection during drag */
@@ -18,6 +25,10 @@
     height: 100%;
     perspective: 1000px;
     transform-style: preserve-3d;
+    margin-bottom: 2rem;
+    border-left: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5%;
 }
   
 .carousel-slide {
@@ -88,7 +99,7 @@
   
 .carousel-nav {
     position: absolute;
-    top: 50%;
+    top: 65%;
     transform: translateY(-50%);
     width: 48px;
     height: 48px;

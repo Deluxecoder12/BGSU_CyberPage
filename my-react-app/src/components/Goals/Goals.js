@@ -1,10 +1,11 @@
 import React from 'react';
-import enhanceEducationImg from '../images/enhance-education.jpg';
-import inclusiveWorkforceImg from '../images/inclusive-workforce.jpg';
-import skillsGapImg from '../images/skills-gap.jpg';
-import learningCommunitiesImg from '../images/learning-communities.jpg';
-import empowerProfessionalsImg from '../images/empower-professionals.jpg';
-import protectInfrastructureImg from '../images/protect-infrastructure.jpg';
+import './Goals.css';
+import enhanceEducationImg from '../../images/enhance-education.jpg';
+import inclusiveWorkforceImg from '../../images/inclusive-workforce.jpg';
+import skillsGapImg from '../../images/skills-gap.jpg';
+import learningCommunitiesImg from '../../images/learning-communities.jpg';
+import empowerProfessionalsImg from '../../images/empower-professionals.jpg';
+import protectInfrastructureImg from '../../images/protect-infrastructure.jpg';
 
 function Goals() {
   const goalsData = [

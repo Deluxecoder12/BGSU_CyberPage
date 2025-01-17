@@ -5,7 +5,9 @@ import footerbg from './images/footer-background.jpg';
 import SummerCamp from './components/SummerCamp/SummerCamp';
 import SpringCamp from './components/SpringCamp/SpringCamp';
 import Workshops from './components/Workshops/Workshops';
+import Goals from './components/Goals/Goals';
 import ActivityCarousel from './components/ActivityCarousel/ActivityCarousel';
+import Resources from './components/Resources/Resources';
 
 // Create a Home component for the main page content
 function Home() {
@@ -23,31 +25,15 @@ function Home() {
       </section>
 
       <section className="goals">
-        <h2>Goals</h2>
-        <p>
-          The successful implementation of the BFP Cyber project will have
-          far-reaching impacts on cybersecurity education and workforce
-          development. By fostering inclusivity and providing accessible pathways,
-          the project will bridge the workforce gap and pave the way for a
-          diverse and skilled cybersecurity workforce. The partnerships forged
-          through this initiative will transcend the university's confines,
-          positively influencing cybersecurity training at a regional level,
-          creating a cohesive and collaborative cybersecurity community, and
-          empowering future-ready professionals to safeguard the digital world
-          and protect the nation's critical assets and privacy.
-        </p>
+        <Goals/>
       </section>
 
       <section className="activities">
-        <h2>Activities</h2>
         <ActivityCarousel />
       </section>
 
       <section className="resources">
-        <h2>Links & Resources</h2>
-        <ul>
-          <li><a href="https://www.bgsu.edu/cs">BGSU Computer Science Department</a></li>
-        </ul>
+        <Resources />
       </section>
     </>
   );
