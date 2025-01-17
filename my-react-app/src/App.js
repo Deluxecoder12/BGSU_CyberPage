@@ -8,20 +8,14 @@ import Workshops from './components/Workshops/Workshops';
 import Goals from './components/Goals/Goals';
 import ActivityCarousel from './components/ActivityCarousel/ActivityCarousel';
 import Resources from './components/Resources/Resources';
+import ProjectDescription from './components/ProjectDescription/ProjectDescription';
 
 // Create a Home component for the main page content
 function Home() {
   return (
     <>
       <section className="project-description">
-        <h2>Project Description</h2>
-        <p>
-          The BFP Cyber project is an innovative initiative aimed at enhancing
-          cybersecurity education and workforce development. This project will
-          foster inclusivity, provide accessible pathways into cybersecurity, and
-          help bridge the workforce gap, leading to a more diverse and skilled
-          cybersecurity workforce.
-        </p>
+        <ProjectDescription />
       </section>
 
       <section className="goals">
