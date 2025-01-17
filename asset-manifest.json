@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/BGSU_CyberPage/static/css/main.6a939095.css",
-    "main.js": "/BGSU_CyberPage/static/js/main.b357b236.js",
+    "main.css": "/BGSU_CyberPage/static/css/main.2acbe3a8.css",
+    "main.js": "/BGSU_CyberPage/static/js/main.dbe95a49.js",
     "static/js/488.af104311.chunk.js": "/BGSU_CyberPage/static/js/488.af104311.chunk.js",
+    "static/media/Lab-Banner.jpg": "/BGSU_CyberPage/static/media/Lab-Banner.20ae5497a04b0de81e16.jpg",
     "static/media/inclusive-workforce.jpg": "/BGSU_CyberPage/static/media/inclusive-workforce.05f627c85d0adc5b097a.jpg",
     "static/media/empower-professionals.jpg": "/BGSU_CyberPage/static/media/empower-professionals.cdd4799e95dede8ee754.jpg",
     "static/media/CODE4hermentors-web.jpg": "/BGSU_CyberPage/static/media/CODE4hermentors-web.c91fa278e54c08270c8a.jpg",
@@ -15,12 +16,12 @@
     "static/media/skills-gap.jpg": "/BGSU_CyberPage/static/media/skills-gap.bffe808a9c8788a42acc.jpg",
     "static/media/bgsu-logo-rev.svg": "/BGSU_CyberPage/static/media/bgsu-logo-rev.c8be9954ac1c17b619d1198cf4d4e635.svg",
     "index.html": "/BGSU_CyberPage/index.html",
-    "main.6a939095.css.map": "/BGSU_CyberPage/static/css/main.6a939095.css.map",
-    "main.b357b236.js.map": "/BGSU_CyberPage/static/js/main.b357b236.js.map",
+    "main.2acbe3a8.css.map": "/BGSU_CyberPage/static/css/main.2acbe3a8.css.map",
+    "main.dbe95a49.js.map": "/BGSU_CyberPage/static/js/main.dbe95a49.js.map",
     "488.af104311.chunk.js.map": "/BGSU_CyberPage/static/js/488.af104311.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a939095.css",
-    "static/js/main.b357b236.js"
+    "static/css/main.2acbe3a8.css",
+    "static/js/main.dbe95a49.js"
   ]
 }
