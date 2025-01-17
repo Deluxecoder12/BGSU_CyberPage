@@ -1,0 +1,75 @@
+.sponsors-tech-section {
+    background-color: #4F2C1D;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-bottom: 3
+}
+  
+.sponsors-tech-section h3 {
+    color: #FFF;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 2rem;
+    min-height: fit-content;
+}
+  
+.sponsors-tech-grid {
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+.sponsor-tech-item {
+    position: relative;
+    width: 300px;
+    min-height: 100px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #FE5000;
+    transition: all 0.3s ease;
+}
+  
+.sponsor-tech-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+  
+.sponsor-tech-logo img {
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: contain;
+}
+  
+.sponsor-tech-overlay {
+    position: absolute;
+    bottom: -200%;
+    left: -10%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+    color: white;
+    padding: 1rem;
+    transition: bottom 0.3s ease;
+}
+  
+.sponsor-tech-item:hover .sponsor-tech-overlay {
+    bottom: 0;
+}
+
+.sponsor-link-icon {
+    text-decoration: none;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+}
+  
+.sponsor-link-icon:hover {
+    transform: scale(1.3);
+}
+  
+.sponsor-tech-overlay h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FE5000;
+}

@@ -9,6 +9,7 @@ import Goals from './components/Goals/Goals';
 import ActivityCarousel from './components/ActivityCarousel/ActivityCarousel';
 import Resources from './components/Resources/Resources';
 import ProjectDescription from './components/ProjectDescription/ProjectDescription';
+import Sponsors from './components/SponserSection/SponserSection';
 
 // Create a Home component for the main page content
 function Home() {
@@ -16,6 +17,12 @@ function Home() {
     <>
       <section className="project-description">
         <ProjectDescription />
+      </section>
+
+      <div className="section-divider"></div>
+      
+      <section className="sponsers">
+        <Sponsors />
       </section>
 
       <section className="goals">

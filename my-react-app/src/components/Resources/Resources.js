@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+// Resources.jsx
+import React from 'react';
 import backgroundImage from '../../images/CODE4hermentors-web.jpg';
+import './Resources.css';
 
 function Resources() {
-  const [activeCategory, setActiveCategory] = useState(0);
 
   const resourceCategories = [
     {
@@ -18,38 +19,32 @@ function Resources() {
   ];
 
   return (
-    <section className="resources-accordion">
-      <h2>Explore Our Resources</h2>
-      {resourceCategories.map((category, index) => (
-        <div key={index} className="accordion-category">
-          <div 
-            className={`category-header ${activeCategory === index ? 'active' : ''}`}
-            onClick={() => setActiveCategory(activeCategory === index ? null : index)}
+    <>
+      <h2 className="resources-heading">Explore Our Resources</h2>
+      <div className="resources-cards">
+        {resourceCategories[0].items.map((item, index) => (
+          <a 
+            key={index}
+            href={item.link}
+            className="resources-card"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-          </div>
-          {activeCategory === index && (
-            <div className="category-links">
-              {category.items.map((item, itemIndex) => (
-                <a 
-                  key={itemIndex} 
-                  href={item.link} 
-                  className="resource-link"
-                  style={{
-                    backgroundImage: `url(${backgroundImage})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center'
-                  }}
-                >
-                  <div className="link-content">
-                    <h4>{item.name}</h4>
-                  </div>
-                </a>
-              ))}
+            <div className="resources-card-media">
+              <img 
+                src={backgroundImage} 
+                alt=""
+                className="resources-card-img"
+              />
             </div>
-          )}
-        </div>
-      ))}
-    </section>
+            <div className="resources-card-content">
+              <h3 className="resources-card-title">{item.name}</h3>
+              <p className="resources-card-desc">{item.description}</p>
+            </div>
+          </a>
+        ))}
+      </div>
+    </>
   );
 }
 
