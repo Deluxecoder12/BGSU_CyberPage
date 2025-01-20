@@ -13,7 +13,7 @@ function ProjectDescription() {
             />
             <div className="image-overlay"></div>
             <div className="project-description-card">
-              <h2>Revolutionizing Cybersecurity Education</h2>
+              <h2>Building<br></br> Cybersecurity Workforce</h2>
               <div className="description-content">
                 <p>
                   In a world where digital threats evolve at lightning speed, the BFP Cyber 

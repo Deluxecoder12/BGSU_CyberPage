@@ -10,46 +10,34 @@ import protectInfrastructureImg from '../../images/protect-infrastructure.jpg';
 function Goals() {
   const goalsData = [
     {
-      title: 'Enhance Cybersecurity Education',
-      description: 'Develop comprehensive educational programs that provide cutting-edge knowledge and practical skills in cybersecurity.',
+      title: 'Evaluating Cybersecurity Talent',
+      description: 'BGSU will assess cybersecurity skills with stakeholders to identify gaps and improve education for future workforce needs.',
       image: enhanceEducationImg,
       imagePosition: 'right'
     },
     {
-      title: 'Foster Inclusive Workforce Development',
-      description: 'Create pathways for diverse talents to enter and thrive in the cybersecurity field, breaking down traditional barriers.',
+      title: 'Building Cybersecurity Pathways',
+      description: 'Workshops, modules, and a summer camp will be offered, along with support for diversity and Accessibility Services for students interested in cybersecurity.',
       image: inclusiveWorkforceImg,
       imagePosition: 'left'
     },
     {
-      title: 'Bridge Technology Skills Gap',
-      description: 'Connect academic training with industry needs, preparing students with the most relevant and in-demand cybersecurity skills.',
+      title: 'Streamlining Workforce Resources',
+      description: 'Collaborating with local institutions, cybersecurity resources will be shared via websites, offering materials, surveys, and workshops to support students, educators, and professionals.',
       image: skillsGapImg,
       imagePosition: 'right'
     },
     {
-      title: 'Create Collaborative Learning Communities',
-      description: 'Build interconnected networks of students, educators, and industry professionals to foster knowledge sharing and innovation.',
+      title: 'Boosting Cybersecurity Workforce Retention',
+      description: 'BGSU will align its cybersecurity programs with the NICE framework, incorporating virtual labs from Ohio CyberRange and CLARK, while creating job fairs for internships and co-op opportunities with local firms.',
       image: learningCommunitiesImg,
-      imagePosition: 'left'
-    },
-    {
-      title: 'Empower Future-Ready Professionals',
-      description: 'Equip students with leadership skills, critical thinking, and adaptive strategies to tackle emerging cybersecurity challenges.',
-      image: empowerProfessionalsImg,
-      imagePosition: 'right'
-    },
-    {
-      title: 'Protect Critical Digital Infrastructure',
-      description: 'Develop experts who can safeguard national and organizational digital assets against evolving cyber threats.',
-      image: protectInfrastructureImg,
       imagePosition: 'left'
     }
   ];
 
   return (
     <section className="goals-section">
-      <h2>Our Mission: Transforming Cybersecurity Education</h2>
+      <h2>Our Goal: Transforming Cybersecurity Education</h2>
       <div className="goals-container">
         {goalsData.map((goal, index) => (
           <div 

@@ -10,6 +10,7 @@ import ActivityCarousel from './components/ActivityCarousel/ActivityCarousel';
 import Resources from './components/Resources/Resources';
 import ProjectDescription from './components/ProjectDescription/ProjectDescription';
 import Sponsors from './components/SponserSection/SponserSection';
+import Collaborator from './components/Collaborator/Collaborator'
 
 // Create a Home component for the main page content
 function Home() {
@@ -36,6 +37,10 @@ function Home() {
       <section className="resources">
         <Resources />
       </section>
+
+      <section className="collaborator">
+        <Collaborator />
+      </section>
     </>
   );
 }
@@ -48,7 +53,7 @@ function Header() {
         <img className="bgsu-logo" src={bgsuLogo} alt="BGSU"/>
         <div className="separator">|</div>
         <div className="title">
-          <span className="title-large">Building Future-Ready Professionals</span>
+          <span className="title-large">Building Future-Ready<br></br> Professionals in Cybersecurity</span>
         </div>
       </div>
 

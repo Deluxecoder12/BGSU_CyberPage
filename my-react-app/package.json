@@ -5,7 +5,6 @@
   "homepage": "https://deluxecoder12.github.io/BGSU_CyberPage",
   "dependencies": {
     "cra-template": "1.2.0",
-    "cross-env": "^7.0.3",
     "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -40,6 +39,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "cross-env": "^7.0.3"
   }
 }

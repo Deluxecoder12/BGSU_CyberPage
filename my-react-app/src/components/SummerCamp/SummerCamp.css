@@ -1,0 +1,129 @@
+
+.banner-container{
+    width:100%;
+   height:50vh;
+   
+}
+
+.cpm-banner{
+    object-fit:cover;
+    width:100%;
+    height:100%;
+    top:0;
+    background-position: center;
+    left:0;
+    bottom:0;
+    background-repeat:no-repeat;
+}
+
+.empty-container{
+    padding-top:20px;
+    background:#f2f2f2;
+    padding-bottom:20px;
+}
+
+.outercontainer{
+    margin-left:20px;
+    margin-right:20px;
+    display:flex;
+    padding-top:30px;
+    flex-direction:row;
+   
+}
+
+.sidebar{
+    width:20%;
+    padding-top:20px;
+}
+
+.content-container{
+    width:80%;
+   text-align:left;
+   padding-left:25px;
+   
+}
+
+.page-title{
+   font-family: 'kepler-std-display', Century Schoolbook, New Century Schoolbook, Georgia, Palatino, Bookman, serif;
+   font-weight:900;
+   font-size:36px;
+}
+
+p{
+    font-family: 'europa', Avenir Next, Avenir, Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:300;
+    line-height:1.65;
+
+}
+
+.camp-offerings{
+    font-weight:600;
+    font-size:1.25em;
+    border-bottom:4px solid #FD5000;
+    padding:20px 0px;
+    color:#FD5000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  li a {
+    display: block;
+    color: #000;
+    border-bottom: 1px solid;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover{
+    background-color: #555;
+    color: white;
+  }
+
+  .grid-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:0px;
+  }
+
+  .o-row_col{
+    display:flex;
+    flex-direction:column;
+  }
+
+  .article-1-img{
+    border-top:2px solid #FD5000;
+    width:300px;
+    height:auto;
+    background-repeat:no-repeat;
+
+  }
+
+  .card-content{
+    border-left: 2px solid #f6f7f8;
+    border-bottom:1px solid #f6f7f8 ;
+    border-right:1px solid #f6f7f8 ;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition:  0.3s ease;
+}
+.card:hover .overlay {
+    opacity: 1;
+}

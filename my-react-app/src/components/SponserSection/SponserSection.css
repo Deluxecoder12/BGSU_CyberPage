@@ -2,16 +2,32 @@
     background-color: #4F2C1D;
     color: white;
     text-align: center;
-    padding-bottom: 1rem;
-    margin-bottom: 3
+    padding-top:25px;
+    padding-bottom:40px;
+    
+    
 }
   
 .sponsors-tech-section h3 {
     color: #FFF;
-    margin-bottom: 0;
+    margin-bottom: 30px;
+    display:inline-block;
     margin-top: 0;
-    font-size: 2rem;
+    font-size: 28px;
     min-height: fit-content;
+    padding-bottom: 7px; 
+    border-bottom: 2px solid transparent; 
+    transition: 0.3s ease;
+}
+
+.sponsors-tech-section h3:hover{
+    border-bottom:2px solid white;
+    cursor:pointer;
+}
+
+
+.sponsor-title{
+    font-family:"Roboto Condensed", Helvetica, Arial, sans-serif !important;
 }
   
 .sponsors-tech-grid {
@@ -25,7 +41,7 @@
     min-height: 100px;
     overflow: hidden;
     border-radius: 15px;
-    background-color: #FE5000;
+    background-color:#FE5000;
     transition: all 0.3s ease;
 }
   

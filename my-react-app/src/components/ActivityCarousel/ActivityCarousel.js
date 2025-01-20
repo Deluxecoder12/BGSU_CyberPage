@@ -24,19 +24,19 @@ function ActivityCarousel() {
   const activities = [
     {
       title: 'Summer Camp',
-      description: 'Join our intensive summer cybersecurity program',
+      description: 'Join our intensive summer cybersecurity program for High School students',
       link: '/summer-camp',
       image: summerCampImg
     },
     {
       title: 'Spring Camp',
-      description: 'Explore cybersecurity during spring break',
+      description: 'A fun and interactive spring camp designed for curious middle schoolers.',
       link: '/spring-camp',
       image: springCampImg
     },
     {
-      title: 'Workshops',
-      description: 'Participate in focused cybersecurity workshops',
+      title: 'Cybersecurity workshop',
+      description: 'Practical cybersecurity training designed specifically for high school teachers',
       link: '/workshops',
       image: workshopsImg
     }
@@ -222,7 +222,7 @@ function ActivityCarousel() {
                 <p className="carousel-description">{activity.description}</p>
                 {/* Link to more details about the activity */}
                 <Link to={activity.link} className="carousel-button">
-                  Learn More
+                  Join Now
                 </Link>
               </div>
             </div>
