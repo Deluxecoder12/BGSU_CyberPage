@@ -1,9 +1,11 @@
 {
   "files": {
-    "main.css": "/BGSU_CyberPage/static/css/main.62e37829.css",
-    "main.js": "/BGSU_CyberPage/static/js/main.11408045.js",
+    "main.css": "/BGSU_CyberPage/static/css/main.56bb0121.css",
+    "main.js": "/BGSU_CyberPage/static/js/main.5ce4cb63.js",
     "static/js/488.af104311.chunk.js": "/BGSU_CyberPage/static/js/488.af104311.chunk.js",
+    "static/media/article-1-img.jpg": "/BGSU_CyberPage/static/media/article-1-img.f3df88a45b9b103494d8.jpg",
     "static/media/Lab-Banner.jpg": "/BGSU_CyberPage/static/media/Lab-Banner.20ae5497a04b0de81e16.jpg",
+    "static/media/summer-academic-banner.jpg": "/BGSU_CyberPage/static/media/summer-academic-banner.9f8895a784dd17986a57.jpg",
     "static/media/inclusive-workforce.jpg": "/BGSU_CyberPage/static/media/inclusive-workforce.05f627c85d0adc5b097a.jpg",
     "static/media/empower-professionals.jpg": "/BGSU_CyberPage/static/media/empower-professionals.cdd4799e95dede8ee754.jpg",
     "static/media/CODE4hermentors-web.jpg": "/BGSU_CyberPage/static/media/CODE4hermentors-web.c91fa278e54c08270c8a.jpg",
@@ -18,12 +20,12 @@
     "static/media/nist-logo.png": "/BGSU_CyberPage/static/media/nist-logo.94790094c92a9628b8e8.png",
     "static/media/bgsu-logo-rev.svg": "/BGSU_CyberPage/static/media/bgsu-logo-rev.c8be9954ac1c17b619d1198cf4d4e635.svg",
     "index.html": "/BGSU_CyberPage/index.html",
-    "main.62e37829.css.map": "/BGSU_CyberPage/static/css/main.62e37829.css.map",
-    "main.11408045.js.map": "/BGSU_CyberPage/static/js/main.11408045.js.map",
+    "main.56bb0121.css.map": "/BGSU_CyberPage/static/css/main.56bb0121.css.map",
+    "main.5ce4cb63.js.map": "/BGSU_CyberPage/static/js/main.5ce4cb63.js.map",
     "488.af104311.chunk.js.map": "/BGSU_CyberPage/static/js/488.af104311.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.62e37829.css",
-    "static/js/main.11408045.js"
+    "static/css/main.56bb0121.css",
+    "static/js/main.5ce4cb63.js"
   ]
 }
