@@ -8,7 +8,7 @@
 
 .collaborator-card{
     display:grid;
-    grid-template-columns: 390px;
+    grid-template-columns: 240px;
     gap:1.5rem;
    
 }
@@ -29,7 +29,7 @@
     height:100%;
     object-fit:contain;
     padding:35px 20px;
-    width:350px;
+    width:180px;
 }
 
 .overlay {
