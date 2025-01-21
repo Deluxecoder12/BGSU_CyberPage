@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/BGSU_CyberPage/static/css/main.56bb0121.css",
+    "main.css": "/BGSU_CyberPage/static/css/main.36b29e8b.css",
     "main.js": "/BGSU_CyberPage/static/js/main.5ce4cb63.js",
     "static/js/488.af104311.chunk.js": "/BGSU_CyberPage/static/js/488.af104311.chunk.js",
     "static/media/article-1-img.jpg": "/BGSU_CyberPage/static/media/article-1-img.f3df88a45b9b103494d8.jpg",
@@ -20,12 +20,12 @@
     "static/media/nist-logo.png": "/BGSU_CyberPage/static/media/nist-logo.94790094c92a9628b8e8.png",
     "static/media/bgsu-logo-rev.svg": "/BGSU_CyberPage/static/media/bgsu-logo-rev.c8be9954ac1c17b619d1198cf4d4e635.svg",
     "index.html": "/BGSU_CyberPage/index.html",
-    "main.56bb0121.css.map": "/BGSU_CyberPage/static/css/main.56bb0121.css.map",
+    "main.36b29e8b.css.map": "/BGSU_CyberPage/static/css/main.36b29e8b.css.map",
     "main.5ce4cb63.js.map": "/BGSU_CyberPage/static/js/main.5ce4cb63.js.map",
     "488.af104311.chunk.js.map": "/BGSU_CyberPage/static/js/488.af104311.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56bb0121.css",
+    "static/css/main.36b29e8b.css",
     "static/js/main.5ce4cb63.js"
   ]
 }
