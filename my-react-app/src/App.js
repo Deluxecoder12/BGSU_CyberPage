@@ -3,6 +3,8 @@ import './App.css';
 import bgsuLogo from './images/bgsu-logo-rev.svg';
 import footerbg from './images/footer-background.jpg';
 import SummerCamp from './components/SummerCamp/SummerCamp';
+import SummerCamp2024 from './components/SummerCamp/SummerCamp2024';
+import SummerCamp2025 from './components/SummerCamp/SummerCamp2025';
 import SpringCamp from './components/SpringCamp/SpringCamp';
 import Workshops from './components/Workshops/Workshops';
 import Goals from './components/Goals/Goals';
@@ -150,6 +152,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/summer-camp" element={<SummerCamp />} />
+            <Route path="/summer-camp2024" element={<SummerCamp2024 />} />
+            <Route path="/summer-camp2025" element={<SummerCamp2025 />} />
             <Route path="/spring-camp" element={<SpringCamp />} />
             <Route path="/workshops" element={<Workshops />} />
           </Routes>

@@ -1,0 +1,131 @@
+.mainsummercontainer{
+    display:flex;
+    flex-direction:row;
+   
+    gap: 20px; /* Adds space between sidebar and content */
+    max-width: 1200px; /* Optional: prevents stretching on wide screens */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.leftsidenav{
+   flex: 0 0 250px; /* Fixed width with flexibility */
+   min-width: 200px;
+   padding-top:20px;
+}
+
+.rightsidecontent{
+    flex: 1; /* Takes remaining space */
+    padding: 20px;
+    border-radius: 8px; 
+}
+
+ .campheading{
+    font-family: 'kepler-std-display', Century Schoolbook, New Century Schoolbook, Georgia, Palatino, Bookman, serif;
+    font-size:2.5rem;
+    line-height:1.1;
+    font-weight:400;
+    
+}
+
+.rightsidecontent p{
+  font-family: 'europa', Avenir Next, Avenir, Helvetica, sans-serif;
+  font-size:1rem;
+  line-height:1.65;
+  color:#000;
+  font-weight:300;
+  margin-bottom:20px;
+}
+
+.camp-offerings{
+    font-weight:600;
+    font-size:1.25em;
+    border-bottom:4px solid #FD5000;
+    padding:10px 0px;
+    border-radius:2px;
+    color:#FD5000;
+    margin-bottom:10px;
+}
+
+.search-bar{
+   margin:30px 0px;
+   width:100%;
+   display:flex;
+   justify-content:center;
+}
+
+.search-bar input{
+    width:100%;
+    outline:none;
+    border-radius:50px;
+    height:60px;
+    font-size:30px;
+    padding:10px 40px;
+    border:1px solid #ececec;
+    box-shadow: 
+        0px 0.7px 0.7px hsl(0deg 0% 0% / 0.09),
+        0px 1.1px 1.2px -1.4px hsl(0deg 0% 0% / 0.08),
+        0px 2.5px 2.7px -2.9px hsl(0deg 0% 0% / 0.08);
+}
+
+.search-bar input::placeholder{
+    color:rgba(0,0,0,0.5);
+    font-size:28px;
+    font-weight:300;
+}
+
+.module-container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:3rem;
+    margin-bottom:60px;
+    border-radius:4px;
+    margin-top:50px;
+}
+
+
+.module-item{
+    display:flex;
+    flex-direction:column;;
+    box-shadow:0 6px 12px rgba(0,0,0,0.1);
+    border-radius:12px;
+    transition:transform 0.3s ease,box-shadow 0.3s ease;
+}
+
+.module-item:hover{
+    cursor:pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.module-image img{
+    width:100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.module-text{
+ padding:0px 20px 20px 20px;
+}
+
+.module-text p{
+    font-size:14px;
+    font-weight:300;
+}
+
+.module-text h3{
+    color: #FE5000; /* BGSU Orange */
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.alertcontainer{
+    color:black;
+    margin-bottom:50px;
+    margin-top:20px;
+    display:inline-block;
+    background-color:#f8d7da;
+    border-color:#f5c2c7;
+    padding:20px;
+    border-radius:4px;
+}
