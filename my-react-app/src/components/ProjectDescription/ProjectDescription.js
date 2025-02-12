@@ -16,10 +16,10 @@ function ProjectDescription() {
               <h2>Building<br></br> Cybersecurity Workforce</h2>
               <div className="description-content">
                 <p>
-                  In a world where digital threats evolve at lightning speed, the BFP Cyber 
-                  project stands as a beacon of innovation. We're not just teaching 
-                  cybersecurity—we're building a diverse, empowered community of 
-                  future-ready professionals who will safeguard our digital frontier.
+                BFP Cyber is dedicated to strengthening cybersecurity education and building a robust cybersecurity workforce through 
+                collaboration with the Ohio government, local companies, higher education institutions, and K-12 schools. The project 
+                aims to establish a cohesive and collaborative cybersecurity community, empowering future-ready professionals 
+                to safeguard the digital realm and protect the nation's critical assets and privacy.
                 </p>
               </div>
             </div>

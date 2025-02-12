@@ -254,6 +254,11 @@ footer {
   transform: translateY(-2px);
 }
 
+.promotions{
+  margin-bottom: 2rem;
+  min-height: min-content;
+}
+
 /* Resources section styling */
 .resources{
   margin-bottom: 2rem;

@@ -6,13 +6,14 @@ import SummerCamp from './components/SummerCamp/SummerCamp';
 import SummerCamp2024 from './components/SummerCamp/SummerCamp2024';
 import SummerCamp2025 from './components/SummerCamp/SummerCamp2025';
 import SpringCamp from './components/SpringCamp/SpringCamp';
+import Promotions from './components/Promotions/Promotions'
 import Workshops from './components/Workshops/Workshops';
-import Goals from './components/Goals/Goals';
 import ActivityCarousel from './components/ActivityCarousel/ActivityCarousel';
 import Resources from './components/Resources/Resources';
 import ProjectDescription from './components/ProjectDescription/ProjectDescription';
-import Sponsors from './components/SponserSection/SponserSection';
-import Collaborator from './components/Collaborator/Collaborator'
+import Collaborator from './components/Collaborator/Collaborator';
+
+
 
 // Create a Home component for the main page content
 function Home() {
@@ -24,17 +25,17 @@ function Home() {
 
       <div className="section-divider"></div>
       
-      <section className="sponsers">
-        <Sponsors />
-      </section>
-
-      <section className="goals">
-        <Goals/>
-      </section>
-
+     
       <section className="activities">
         <ActivityCarousel />
       </section>
+    
+
+      <section className="promotions">
+        <Promotions />
+      </section>
+
+     
 
       <section className="resources">
         <Resources />
@@ -43,6 +44,12 @@ function Home() {
       <section className="collaborator">
         <Collaborator />
       </section>
+
+      <div className="footer-support">
+        <p>This project is supported by the National Institute of Standards and Technology.</p>
+      </div>
+
+      
     </>
   );
 }
@@ -55,7 +62,7 @@ function Header() {
         <img className="bgsu-logo" src={bgsuLogo} alt="BGSU"/>
         <div className="separator">|</div>
         <div className="title">
-          <span className="title-large">Building Future-Ready<br></br> Professionals in Cybersecurity</span>
+          <span className="title-large">Building Future-Ready <br></br>Professionals in Cybersecurity (BFP Cyber)</span>
         </div>
       </div>
 

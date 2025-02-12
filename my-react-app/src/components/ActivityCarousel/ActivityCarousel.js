@@ -5,260 +5,193 @@ import summerCampImg from '../../images/CODE4hermentors-web.jpg';
 import springCampImg from '../../images/Julia-Grummel-web.jpg';
 import workshopsImg from '../../images/Sankardas-Roy.jpg';
 
+const initiatives = [
+    {
+        title: 'Evaluating Cybersecurity Talent',
+        description: 'Assess cybersecurity skills with stakeholders to identify gaps and improve education for future workforce needs.',
+        link: '/talent-evaluation',
+        image: summerCampImg
+    },
+    {
+        title: 'Building Cybersecurity Pathways',
+        description: 'Workshops, modules, and a summer camp with support for diversity and Accessibility Services for students.',
+        link: '/pathways',
+        image: springCampImg
+    },
+    {
+        title: 'Streamlining Workforce Resources',
+        description: 'Collaborating with local institutions, sharing cybersecurity resources via websites, materials, and workshops.',
+        link: '/resources',
+        image: workshopsImg
+    },
+    {
+        title: 'Boosting Cybersecurity Workforce Retention',
+        description: 'Aligning with NICE framework, incorporating virtual labs, and creating job fairs for internships.',
+        link: '/retention',
+        image: springCampImg
+    }
+];
+
 function ActivityCarousel() {
-  // State to keep track of the currently displayed slide
-  const [currentSlide, setCurrentSlide] = useState(0);
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [isDragging, setIsDragging] = useState(false);
+    const [startX, setStartX] = useState(0);
+    const [dragOffset, setDragOffset] = useState(0);
+    const carouselTrackRef = useRef(null);
+    const intervalRef = useRef(null);
 
-  // State for drag interaction
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [dragOffset, setDragOffset] = useState(0);
+    const getPosition = useCallback((index) => {
+        const diff = index - currentSlide;
+        const length = initiatives.length;
+        if (diff > length / 2) return diff - length;
+        if (diff < -length / 2) return diff + length;
+        return diff;
+    }, [currentSlide]);
 
-  // Ref for the carousel track to get its dimensions
-  const carouselTrackRef = useRef(null);
+    const nextSlide = useCallback(() => {
+        setCurrentSlide((prev) => (prev + 1) % initiatives.length);
+        setDragOffset(0);
+    }, []);
 
-  // Ref to manage the automatic slide interval
-  const intervalRef = useRef(null);
+    const prevSlide = useCallback(() => {
+        setCurrentSlide((prev) => (prev - 1 + initiatives.length) % initiatives.length);
+        setDragOffset(0);
+    }, []);
 
-  // Array of activities to be displayed in the carousel
-  const activities = [
-    {
-      title: 'Summer Camp',
-      description: 'Join our intensive summer cybersecurity program for High School students',
-      link: '/summer-camp',
-      image: summerCampImg
-    },
-    {
-      title: 'Spring Camp',
-      description: 'A fun and interactive spring camp designed for curious middle schoolers.',
-      link: '/spring-camp',
-      image: springCampImg
-    },
-    {
-      title: 'Cybersecurity workshop',
-      description: 'Practical cybersecurity training designed specifically for high school teachers',
-      link: '/workshops',
-      image: workshopsImg
-    }
-  ];
+    const startAutoSlide = useCallback(() => {
+        if (intervalRef.current) clearInterval(intervalRef.current);
+        intervalRef.current = setInterval(nextSlide, 5000);
+    }, [nextSlide]);
 
-  // Calculate the positioning of slides for a circular carousel effect
-  const getPosition = useCallback((index) => {
-    const diff = index - currentSlide;
-    const length = activities.length;
-    
-    // Handle wrapping to create a seamless circular navigation
-    // This ensures slides wrap around correctly when navigating
-    if (diff > length / 2) return diff - length;
-    if (diff < -length / 2) return diff + length;
-    return diff;
-  }, [currentSlide, activities.length]);
+    const stopAutoSlide = useCallback(() => {
+        if (intervalRef.current) {
+            clearInterval(intervalRef.current);
+            intervalRef.current = null;
+        }
+    }, []);
 
-  // Move to the next slide, wrapping around to the first slide if at the end
-  const nextSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev + 1) % activities.length);
-    // Reset drag-related states
-    setDragOffset(0);
-  }, [activities.length]);
+    const handleMouseDown = useCallback((e) => {
+        if (!carouselTrackRef.current) return;
+        stopAutoSlide();
+        setIsDragging(true);
+        setStartX(e.clientX - carouselTrackRef.current.offsetLeft);
+        e.preventDefault();
+    }, [stopAutoSlide]);
 
-  // Move to the previous slide, wrapping around to the last slide if at the beginning
-  const prevSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev - 1 + activities.length) % activities.length);
-    // Reset drag-related states
-    setDragOffset(0);
-  }, [activities.length]);
+    const handleMouseMove = useCallback((e) => {
+        if (!isDragging || !carouselTrackRef.current) return;
+        const currentX = e.clientX - carouselTrackRef.current.offsetLeft;
+        const walk = (currentX - startX) * 1.5;
+        setDragOffset(walk);
+    }, [isDragging, startX]);
 
-  const startAutoSlide = useCallback(() => {
-    // Clear any existing interval
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-    }
-    
-    // Start a new interval
-    intervalRef.current = setInterval(nextSlide, 5000);
-  }, [nextSlide]);
+    const handleMouseUp = useCallback(() => {
+        if (!isDragging) return;
+        setIsDragging(false);
+        const threshold = carouselTrackRef.current ? carouselTrackRef.current.offsetWidth * 0.2 : 100;
+        
+        if (dragOffset > threshold) {
+            prevSlide();
+        } else if (dragOffset < -threshold) {
+            nextSlide();
+        }
+        setDragOffset(0);
+        startAutoSlide();
+    }, [isDragging, dragOffset, nextSlide, prevSlide, startAutoSlide]);
 
-  // Stop the automatic sliding interval
-  const stopAutoSlide = useCallback(() => {
-    if (intervalRef.current) {
-      clearInterval(intervalRef.current);
-      intervalRef.current = null;
-    }
-  }, []);
+    const handleMouseLeave = useCallback(() => {
+        if (isDragging) {
+            setIsDragging(false);
+            setDragOffset(0);
+            startAutoSlide();
+        }
+    }, [isDragging, startAutoSlide]);
 
-  // Handle mouse down event to start dragging
-  const handleMouseDown = useCallback((e) => {
-    if (!carouselTrackRef.current) return;
-    
-    // Stop auto-sliding when drag starts
-    stopAutoSlide();
-    
-    setIsDragging(true);
-    setStartX(e.clientX - carouselTrackRef.current.offsetLeft);
-    
-    // Prevent text selection during drag
-    e.preventDefault();
-  }, [stopAutoSlide]);
+    useEffect(() => {
+        startAutoSlide();
+        return () => {
+            if (intervalRef.current) clearInterval(intervalRef.current);
+        };
+    }, [startAutoSlide]);
 
-  // Handle mouse move event during dragging
-  const handleMouseMove = useCallback((e) => {
-    if (!isDragging || !carouselTrackRef.current) return;
-    
-    const currentX = e.clientX - carouselTrackRef.current.offsetLeft;
-    const walk = (currentX - startX) * 1.5; // Adjust sensitivity
-    
-    setDragOffset(walk);
-  }, [isDragging, startX]);
+    useEffect(() => {
+        const track = carouselTrackRef.current;
+        if (track) {
+            track.addEventListener('mousemove', handleMouseMove);
+            track.addEventListener('mouseleave', handleMouseLeave);
+            document.addEventListener('mouseup', handleMouseUp);
+            
+            return () => {
+                track.removeEventListener('mousemove', handleMouseMove);
+                track.removeEventListener('mouseleave', handleMouseLeave);
+                document.removeEventListener('mouseup', handleMouseUp);
+            };
+        }
+    }, [handleMouseMove, handleMouseUp, handleMouseLeave]);
 
-  // Handle mouse up/leave events to complete drag interaction
-  const handleMouseUp = useCallback(() => {
-    if (!isDragging) return;
-    
-    setIsDragging(false);
-    
-    // Determine if slide should change based on drag distance
-    const threshold = carouselTrackRef.current 
-      ? carouselTrackRef.current.offsetWidth * 0.2 
-      : 100; // 20% of width or 100px
-    
-    if (dragOffset > threshold) {
-      prevSlide();
-    } else if (dragOffset < -threshold) {
-      nextSlide();
-    }
-    
-    // Reset drag offset
-    setDragOffset(0);
-    
-    // Restart auto-sliding
-    startAutoSlide();
-  }, [isDragging, dragOffset, nextSlide, prevSlide, startAutoSlide]);
-
-  const handleMouseLeave = useCallback(() => {
-    if (isDragging) {
-      setIsDragging(false);
-      setDragOffset(0);
-      
-      // Restart auto-sliding
-      startAutoSlide();
-    }
-  }, [isDragging, startAutoSlide]);
-
-  // Start auto-sliding when component mounts
-  useEffect(() => {
-    startAutoSlide();
-    
-    // Cleanup interval on unmount
-    return () => {
-      if (intervalRef.current) {
-        clearInterval(intervalRef.current);
-      }
-    };
-  }, [startAutoSlide]);
-
-  // Add event listeners for mouse interactions
-  useEffect(() => {
-    const track = carouselTrackRef.current;
-    
-    if (track) {
-      track.addEventListener('mousemove', handleMouseMove);
-      track.addEventListener('mouseleave', handleMouseLeave);
-      document.addEventListener('mouseup', handleMouseUp);
-      
-      // Cleanup event listeners
-      return () => {
-        track.removeEventListener('mousemove', handleMouseMove);
-        track.removeEventListener('mouseleave', handleMouseLeave);
-        document.removeEventListener('mouseup', handleMouseUp);
-      };
-    }
-  }, [handleMouseMove, handleMouseUp, handleMouseLeave]);
-
-  return (
-    <div 
-      className="carousel-container"
-      // Prevent default drag behavior
-      onDragStart={(e) => e.preventDefault()}
-    >
-      {/* Container for carousel slides */}
-      <h2 className="Activity-section-title">Activities</h2>
-      <div 
-        ref={carouselTrackRef}
-        className="carousel-track"
-        onMouseDown={handleMouseDown}
-        style={{
-          // Apply drag offset for smooth dragging experience
-          transform: `translateX(${dragOffset}px)`,
-          transition: isDragging ? 'none' : 'transform 0.3s ease'
-        }}
-      >
-        {activities.map((activity, index) => {
-          // Calculate the position of each slide relative to the current slide
-          const position = getPosition(index);
-          
-          return (
-            <div
-              key={index}
-              // Apply active class to the current slide, set z-index for proper layering
-              className={`carousel-slide ${position === 0 ? 'active' : ''}`}
-              style={{
-                // Use CSS variable for positioning
-                '--position': position,
-                // Ensure current slide is on top of others
-                zIndex: position === 0 ? 3 : 1
-              }}
+    return (
+        <div className="carousel-container" onDragStart={(e) => e.preventDefault()}>
+            <h2 className="Activity-section-title">Our Cybersecurity Initiatives</h2>
+            <div 
+                ref={carouselTrackRef}
+                className="carousel-track"
+                onMouseDown={handleMouseDown}
+                style={{
+                    transform: `translateX(${dragOffset}px)`,
+                    transition: isDragging ? 'none' : 'transform 0.3s ease'
+                }}
             >
-              {/* Activity image */}
-              <img
-                src={activity.image}
-                alt={activity.title}
-                className="carousel-image"
-                // Prevent image dragging
-                draggable="false"
-              />
-              {/* Slide content */}
-              <div className="carousel-content">
-                <h3 className="carousel-title">{activity.title}</h3>
-                <p className="carousel-description">{activity.description}</p>
-                {/* Link to more details about the activity */}
-                <Link to={activity.link} className="carousel-button">
-                  Join Now
-                </Link>
-              </div>
+                {initiatives.map((initiative, index) => (
+                    <div
+                        key={index}
+                        className={`carousel-slide ${getPosition(index) === 0 ? 'active' : ''}`}
+                        style={{
+                            '--position': getPosition(index),
+                            zIndex: getPosition(index) === 0 ? 3 : 1
+                        }}
+                    >
+                        <img
+                            src={initiative.image}
+                            alt={initiative.title}
+                            className="carousel-image"
+                            draggable="false"
+                        />
+                        <div className="carousel-content">
+                            <h3 className="carousel-title">{initiative.title}</h3>
+                            <p className="carousel-description">{initiative.description}</p>
+                           
+                        </div>
+                    </div>
+                ))}
             </div>
-          );
-        })}
-      </div>
 
-      {/* Previous slide navigation button */}
-      <button 
-        className="carousel-nav prev" 
-        onClick={() => {
-          stopAutoSlide();
-          prevSlide();
-          startAutoSlide();
-        }}
-      >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M15 18l-6-6 6-6" />
-        </svg>
-      </button>
+            <button 
+                className="carousel-nav prev" 
+                onClick={() => {
+                    stopAutoSlide();
+                    prevSlide();
+                    startAutoSlide();
+                }}
+            >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M15 18l-6-6 6-6" />
+                </svg>
+            </button>
 
-      {/* Next slide navigation button */}
-      <button 
-        className="carousel-nav next" 
-        onClick={() => {
-          stopAutoSlide();
-          nextSlide();
-          startAutoSlide();
-        }}
-      >
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M9 18l6-6-6-6" />
-        </svg>
-      </button>
-    </div>
-  );
+            <button 
+                className="carousel-nav next" 
+                onClick={() => {
+                    stopAutoSlide();
+                    nextSlide();
+                    startAutoSlide();
+                }}
+            >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M9 18l6-6-6-6" />
+                </svg>
+            </button>
+        </div>
+    );
 }
 
 export default ActivityCarousel;

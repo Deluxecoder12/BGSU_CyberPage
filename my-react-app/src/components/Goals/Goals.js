@@ -37,7 +37,7 @@ function Goals() {
 
   return (
     <section className="goals-section">
-      <h2>Our Goal: Transforming Cybersecurity Education</h2>
+      <h2>Our Cybersecurity Initiatives</h2>
       <div className="goals-container">
         {goalsData.map((goal, index) => (
           <div 

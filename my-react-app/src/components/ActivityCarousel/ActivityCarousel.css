@@ -1,7 +1,8 @@
-.Activity-section-title{
+.Activity-section-title {
     margin: 0;
     margin-bottom: 3rem;
-    text-align: left;
+    text-align: center;
+    color:#4f2c1d;
     font-size: 2.5rem;
 }
 
@@ -11,15 +12,18 @@
     height: 400px;
     min-height: fit-content;
     margin: 0 auto;
+    background-color:whitesmoke;
+    padding:1rem 1rem 1.5rem 1rem;
+    border-radius:2%;
     overflow: hidden;
-    user-select: none; /* Prevent text selection during drag */
-    cursor: grab; /* Show grabbing cursor */
+    user-select: none;
+    cursor: grab;
 }
 
 .carousel-container:active {
-    cursor: grabbing; /* Change cursor when actively dragging */
+    cursor: grabbing;
 }
-  
+
 .carousel-track {
     position: relative;
     height: 100%;
@@ -30,7 +34,7 @@
     border-right: 1px solid rgba(0,0,0,0.1);
     border-radius: 5%;
 }
-  
+
 .carousel-slide {
     position: absolute;
     width: 60%;
@@ -40,17 +44,17 @@
     opacity: 0.4;
     transform: translateX(calc(var(--position) * 100%)) scale(0.8);
 }
-  
+
 .carousel-slide.active {
     opacity: 1;
     transform: translateX(0) scale(1);
     z-index: 2;
 }
-  
+
 .carousel-slide:not(.active) {
     opacity: 0.4;
 }
-  
+
 .carousel-image {
     width: 100%;
     height: 100%;
@@ -58,7 +62,7 @@
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-  
+
 .carousel-content {
     position: absolute;
     bottom: 0;
@@ -70,19 +74,20 @@
     border-radius: 0 0 12px 12px;
     text-align: center;
 }
-  
+
 .carousel-title {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 8px;
+    color:#FE5000;
 }
-  
+
 .carousel-description {
     font-size: 16px;
     margin-bottom: 16px;
     opacity: 0.9;
 }
-  
+
 .carousel-button {
     display: inline-block;
     padding: 12px 24px;
@@ -94,11 +99,11 @@
     border-radius: 25px;
     transition: background-color 0.3s ease;
 }
-  
+
 .carousel-button:hover {
     background-color: #4F2C1D;
 }
-  
+
 .carousel-nav {
     position: absolute;
     top: 65%;
@@ -116,16 +121,16 @@
     transition: all 0.3s ease;
     z-index: 4;
 }
-  
+
 .carousel-nav:hover {
     background: #FE5000;
     color: white;
 }
-  
+
 .carousel-nav.prev {
     left: 20px;
 }
-  
+
 .carousel-nav.next {
     right: 20px;
 }
