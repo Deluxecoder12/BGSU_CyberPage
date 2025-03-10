@@ -1,34 +1,34 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import './ActivityCarousel.css';
-import summerCampImg from '../../images/CODE4hermentors-web.jpg';
-import springCampImg from '../../images/Julia-Grummel-web.jpg';
-import workshopsImg from '../../images/Sankardas-Roy.jpg';
+import EvaluatingCybersecurity from '../../images/cybersecurity_workforce.jpg';
+import BuildingCybersecurity from '../../images/building_cybersecurity.jpg';
+import Streamliningworkforce from '../../images/streamlining_workforce.jpg';
+import Boostingcybersecurity from '../../images/boosting_cybersecurity.jpg';
 
 const initiatives = [
     {
         title: 'Evaluating Cybersecurity Talent',
         description: 'Assess cybersecurity skills with stakeholders to identify gaps and improve education for future workforce needs.',
         link: '/talent-evaluation',
-        image: summerCampImg
+        image: EvaluatingCybersecurity
     },
     {
         title: 'Building Cybersecurity Pathways',
         description: 'Workshops, modules, and a summer camp with support for diversity and Accessibility Services for students.',
         link: '/pathways',
-        image: springCampImg
+        image: BuildingCybersecurity
     },
     {
         title: 'Streamlining Workforce Resources',
         description: 'Collaborating with local institutions, sharing cybersecurity resources via websites, materials, and workshops.',
         link: '/resources',
-        image: workshopsImg
+        image: Streamliningworkforce
     },
     {
         title: 'Boosting Cybersecurity Workforce Retention',
         description: 'Aligning with NICE framework, incorporating virtual labs, and creating job fairs for internships.',
         link: '/retention',
-        image: springCampImg
+        image: Boostingcybersecurity
     }
 ];
 

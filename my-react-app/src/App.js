@@ -6,9 +6,9 @@ import SummerCamp from './components/SummerCamp/SummerCamp';
 import SummerCamp2024 from './components/SummerCamp/SummerCamp2024';
 import SummerCamp2025 from './components/SummerCamp/SummerCamp2025';
 import SpringCamp from './components/SpringCamp/SpringCamp';
-import Promotions from './components/Promotions/Promotions'
 import Workshops from './components/Workshops/Workshops';
 import ActivityCarousel from './components/ActivityCarousel/ActivityCarousel';
+import Promotions from './components/Promotions/Promotions.js';
 import Resources from './components/Resources/Resources';
 import ProjectDescription from './components/ProjectDescription/ProjectDescription';
 import Collaborator from './components/Collaborator/Collaborator';
