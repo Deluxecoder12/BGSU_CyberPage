@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BGSU_CyberPage/static/css/main.b75cdc37.css",
-    "main.js": "/BGSU_CyberPage/static/js/main.4000eccf.js",
+    "main.css": "/BGSU_CyberPage/static/css/main.d979b059.css",
+    "main.js": "/BGSU_CyberPage/static/js/main.2626326a.js",
     "static/js/488.af104311.chunk.js": "/BGSU_CyberPage/static/js/488.af104311.chunk.js",
     "static/media/Educyber Image1.jpg": "/BGSU_CyberPage/static/media/Educyber Image1.a78cbd72436d0e305290.jpg",
     "static/media/Edu cyber workshop.jpg": "/BGSU_CyberPage/static/media/Edu cyber workshop.cc59a56611196bd7b191.jpg",
@@ -40,12 +40,12 @@
     "static/media/2025module-3.png": "/BGSU_CyberPage/static/media/2025module-3.237975e54b3805239c6a.png",
     "static/media/bgsu-logo-rev.svg": "/BGSU_CyberPage/static/media/bgsu-logo-rev.c8be9954ac1c17b619d1198cf4d4e635.svg",
     "index.html": "/BGSU_CyberPage/index.html",
-    "main.b75cdc37.css.map": "/BGSU_CyberPage/static/css/main.b75cdc37.css.map",
-    "main.4000eccf.js.map": "/BGSU_CyberPage/static/js/main.4000eccf.js.map",
+    "main.d979b059.css.map": "/BGSU_CyberPage/static/css/main.d979b059.css.map",
+    "main.2626326a.js.map": "/BGSU_CyberPage/static/js/main.2626326a.js.map",
     "488.af104311.chunk.js.map": "/BGSU_CyberPage/static/js/488.af104311.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b75cdc37.css",
-    "static/js/main.4000eccf.js"
+    "static/css/main.d979b059.css",
+    "static/js/main.2626326a.js"
   ]
 }
