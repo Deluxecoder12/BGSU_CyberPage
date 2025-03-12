@@ -7,7 +7,7 @@
 }
 
 .partners-container{
- gap:12px;
+ gap:18px;
  display:flex;
  flex-direction:row;
  align-items:flex-start;
@@ -16,7 +16,7 @@
 
 
 .tsection-container{
-  padding:15px;
+ padding:25px 15px 35px 15px;
   margin-bottom:10px;
   border-radius:8px;
   cursor:pointer;

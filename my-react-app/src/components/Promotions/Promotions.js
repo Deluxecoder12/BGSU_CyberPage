@@ -30,9 +30,9 @@ const Promotions = () => {
   const events = [
     {
       id:1,
-      name:'BG Cyber Guardians',
+      name:'BG CyberGuardians',
       image:CyberGuardians,
-      date:'Jun 2024',
+      date:'June 2024',
       alt:'Cyberguardians image',
       carouselImages: [CyberGuardiansImage2, CyberGuardiansImage1, CyberGuardiansImage3, CyberGuardiansImage4,
         CyberGuardiansImage5, CyberGuardiansImage6
@@ -40,9 +40,9 @@ const Promotions = () => {
     },
     {
       id:2,
-      name:'Educyber workshop',
+      name:'EduCyber Workshop',
       image:Educyberworkshop,
-      date:'Jun 2024',
+      date:'June 2024',
       alt:'Educyber workshop image',
       carouselImages: [EducyberImage1, EducyberImage2, EducyberImage3,
         EducyberImage4, EducyberImage5, EducyberImage6
@@ -50,9 +50,9 @@ const Promotions = () => {
     },
     {
       id:3,
-      name:'Cybered connect works',
+      name:'CyberEd Connect Workshop',
       image:Cyberedconnect,
-      date:'Jun 2024',
+      date:'February 2025',
       alt:'Cybered connect works image',
       carouselImages: [CyberedImage1, CyberedImage2, CyberedImage3,
         CyberedImage4

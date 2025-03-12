@@ -66,14 +66,12 @@ const  TestCollaborator= () =>{
                     <span className="chevron">{expandedSection === section ? "▼" : "▶"}</span>
                 </div>
                 
-                {expandedSection === section ? (
+                {expandedSection === section && (
             <ul className="partner-list">
               {details.partners.map((partner, index) => (
                 <li key={index}>{partner}</li>
               ))}
             </ul>
-          ) : (
-            <p className="preview-text">{details.preview}</p>
           )}
             </div>
         ))}
