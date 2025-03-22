@@ -1,5 +1,5 @@
 .promotions-container {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
   }
@@ -18,8 +18,8 @@
  }
 
  .event-box{
-  width:280px;
-  height:280px;
+  width:16em;
+  height:16em;
   border-radius:12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position:relative;
@@ -66,10 +66,106 @@
 .university-news-badge {
   position: absolute;
   top: 0;
-  right: 0; /* Place it at the bottom-right */
-  background-color: #FD5000; /* Match the orange color */
+  right: 0; 
+  background-color: #FD5000; 
   color: white;
   padding: 5px 10px 5px 10px;
-  border-radius: 0px 12px 0px 12px; /* Rounded corner on the left side */
+  border-radius: 0px 12px 0px 12px; 
   font-size: 0.8rem;
+}
+
+/* Media Queries for Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .Promotions-section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .event-grid {
+    gap: 20px;
+  }
+
+  .event-box {
+    width: 220px;
+    height: 220px;
+  }
+
+  .event-name {
+    font-size: 1rem;
+    padding: 15px 0px;
+  }
+
+  .university-news-badge {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+}
+
+/* Media Queries for Large Mobile Screens (480px - 767px) */
+@media (max-width: 767px) {
+.promotions-container {
+  width:90%;
+}
+  .Promotions-section-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    text-align: center; /* Center the title on large mobile screens */
+  }
+
+  .event-grid {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+  }
+
+  .event-box {
+    width: 100%; 
+    max-width: 300px; 
+    height: 200px; 
+  }
+
+  .event-name {
+    font-size: 0.9rem;
+    padding: 10px 0px;
+  }
+
+  .university-news-badge {
+    font-size: 0.6rem;
+    padding: 3px 6px;
+  }
+}
+
+
+/* Media Queries for Mobile Phones (up to 479px) */
+@media (max-width: 479px) {
+  .promotions-container {
+    width:90%;
+  }
+  .Promotions-section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center; /* Center the title on mobile */
+  }
+
+  .event-grid {
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px; 
+  }
+
+  .event-box {
+    width: 100%; 
+    max-width: 300px; 
+    height: 200px;
+  }
+
+  .event-name {
+    font-size: 0.9rem;
+    padding: 10px 0px;
+  }
+
+  .university-news-badge {
+    font-size: 0.6rem;
+    padding: 3px 6px;
+  }
 }

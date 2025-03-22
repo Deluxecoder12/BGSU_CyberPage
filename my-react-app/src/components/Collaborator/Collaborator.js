@@ -11,7 +11,7 @@ const  TestCollaborator= () =>{
       count: 1,
       preview: "Ohio Deputy CISO",
       bgClass: "government-section",
-      partners: ["Kevin Wohlever (Ohio Deputy CISO)"],
+      partners: ["State of Ohio",'OHIO CYBER RANGE INSTITUTE'],
 
     },
     "Industry Partners": {

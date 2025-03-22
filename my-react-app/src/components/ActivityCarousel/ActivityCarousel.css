@@ -134,3 +134,159 @@
 .carousel-nav.next {
     right: 20px;
 }
+
+
+/* Media Queries for Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .Activity-section-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .carousel-container {
+      height: 350px;
+    }
+    
+    .carousel-slide {
+      width: 70%;
+      left: 15%;
+    }
+    
+    .carousel-title {
+      font-size: 22px;
+    }
+    
+    .carousel-description {
+      font-size: 14px;
+    }
+    
+    .carousel-content {
+      padding: 1.5rem;
+    }
+    
+    .carousel-nav {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  /* Media Queries for Mobile Landscape (481px - 767px) */
+  @media (max-width: 767px) {
+    .Activity-section-title {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    
+    .carousel-container {
+      height: 300px;
+      width:90%;
+      padding: 0.8rem;
+    }
+    
+    .carousel-slide {
+      width: 80%;
+      left: 10%;
+    }
+    
+    .carousel-content {
+      padding: 1rem;
+    }
+    
+    .carousel-title {
+      font-size: 20px;
+      margin-bottom: 4px;
+    }
+    
+    .carousel-description {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+    
+    .carousel-nav {
+      width: 36px;
+      height: 36px;
+      top: 60%;
+    }
+    
+    .carousel-nav.prev {
+      left: 10px;
+    }
+    
+    .carousel-nav.next {
+      right: 10px;
+    }
+  }
+  
+  /* Media Queries for Mobile Portrait (up to 480px) */
+  @media (max-width: 480px) {
+    .activities{
+      width:95%;
+    }
+    .Activity-section-title {
+      font-size: 1.5rem;
+    }
+    
+    .carousel-container {
+      height: 250px;
+      width:90%;
+      padding: 0.5rem;
+    }
+    
+    .carousel-slide {
+      width: 90%;
+      left: 5%;
+    }
+    
+    .carousel-track {
+      margin-bottom: 1rem;
+    }
+    
+    .carousel-content {
+      padding: 0.8rem;
+    }
+    
+    .carousel-title {
+      font-size: 18px;
+      margin-bottom: 2px;
+    }
+    
+    .carousel-description {
+      font-size: 12px;
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+    
+    .carousel-nav {
+      width: 32px;
+      height: 32px;
+      top: 50%;
+    }
+    
+    .carousel-nav.prev {
+      left: 5px;
+    }
+    
+    .carousel-nav.next {
+      right: 5px;
+    }
+  }
+  
+  /* Extra small devices */
+  @media (max-width: 320px) {
+    .carousel-container {
+      height: 220px;
+    }
+    
+    .carousel-content {
+      padding: 0.6rem;
+    }
+    
+    .carousel-title {
+      font-size: 16px;
+    }
+    
+    .carousel-description {
+      font-size: 11px;
+      line-height: 1.2;
+    }
+  }

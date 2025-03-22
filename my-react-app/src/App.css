@@ -1,3 +1,5 @@
+
+
 .App {
   max-width: 1200px;
   margin: 0 auto;
@@ -49,6 +51,7 @@
 .title-large {
   font-size: 1.5rem;
   font-weight: bold;
+  padding-top:20px;
 }
 
 .main-nav {
@@ -218,6 +221,36 @@ footer {
   }
 }
 
+@media (min-width:991px) and (max-width:1200px){
+  .header-top {
+    padding: 12px 15px;
+    gap: 15px;
+  }
+  
+  .bgsu-logo {
+    width: 8rem;
+  }
+  
+  .separator {
+    font-size: 3.5rem;
+  }
+  
+  .title-large {
+    font-size: 1.3rem;
+    padding-top:20px;
+  }
+  
+  .main-nav .nav-container {
+    padding: 8px 15px;
+  }
+  .resources{
+    padding-left:20px;
+  }
+  .collaborator{
+    padding-left:20px;
+  }
+}
+
 /* Activities section styling */
 .activities{
   justify-self: center;
@@ -288,3 +321,95 @@ footer {
   margin-top:2rem;
   margin-bottom:3rem;
 }
+
+
+/* small mobiles up to width of 575px */
+@media (max-width:575px){
+  .activities{
+    width:95%;
+  }
+  .header-top{
+    flex-direction:column;
+  }
+  .bgsu-logo{
+    width:5rem;
+  }
+  .separator{
+    display:none;
+  }
+  .title-large{
+    font-size:0.9rem;
+    padding: 0 5px;
+    text-align:center;
+  }
+  .main-nav .nav-container {
+    padding: 5px;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* Specifically for screens between 576px and 767px */
+@media (min-width: 575px) and (max-width: 767px) {
+  .activities{
+    width:95%;
+  }
+  .header-top {
+    flex-direction: column;
+    padding: 12px 10px;
+   
+  }
+  
+  .separator {
+    display:none;
+  }
+  
+  .bgsu-logo {
+    width: 6rem;
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .title-large {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .main-nav .nav-container {
+    padding: 8px 10px;
+  }
+}
+
+/* Specifically for screens between 767px and 991px */
+@media (min-width:767px) and (max-width:991px){
+  .activities{
+    width:95%;
+  }
+  .header-top {
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .bgsu-logo {
+    width: 7rem;
+  }
+  
+  .separator {
+    font-size: 3rem;
+  }
+  
+  .title-large {
+    font-size: 1.1rem;
+    padding-top:20px;
+  }
+  .resources{
+    padding-left:20px;
+  }
+  .collaborator{
+    padding-left:20px;
+  }
+  
+}
+

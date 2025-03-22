@@ -3,6 +3,8 @@ import './Promotions.css';
 import CyberGuardians from '../../images/Cyberguardians.jpg';
 import Educyberworkshop from '../../images/Edu cyber workshop.jpg';
 import Cyberedconnect from '../../images/Cybered connect works.jpg'
+import CyberFuture from '../../images/CyberFuture.jpg'
+import CyberFuture2 from '../../images/CyberFuture 2.jpg'
 import CyberGuardiansImage1 from '../../images/Cyber guardian Image1.jpg';
 import CyberGuardiansImage2 from '../../images/Cyber guardian Image2.jpg';
 import CyberGuardiansImage3 from '../../images/Cyber guardian Image3.jpg';
@@ -57,6 +59,14 @@ const Promotions = () => {
       carouselImages: [CyberedImage1, CyberedImage2, CyberedImage3,
         CyberedImage4
       ]
+    },
+    {
+      id:4,
+      name:'CyberFuture Spring Camp',
+      image:CyberFuture,
+      date:'March 2025',
+      alt:'CyberFuture spring camp image',
+      carouselImages:[CyberFuture, CyberFuture2]
     }
   ]
 

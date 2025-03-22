@@ -36,8 +36,8 @@ border: 2px solid #ccc;
     z-index:10;
     position:relative;
     gap:6px;
-    bottom: 10px;/*position dots at bottom*/
-    width: 100%; /*dots width 100% of container*/
+    bottom: 10px;
+    width: 100%; 
 }
 
 .slider-dots .dot{
@@ -81,4 +81,50 @@ background-color:white;
 
 .next-arrow {
   right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .modalContainer {
+      width: 95%;
+  }
+  
+  .slide img {
+      max-height: 60vh;
+  }
+  
+  .slider-arrow {
+      width: 38px;
+      height: 38px;
+      font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .modalContainer {
+      width: 95%;
+      border-radius: 8px;
+  }
+  
+  .slide img {
+      max-height: 50vh;
+  }
+  
+  .closeModalbtn {
+      top: 10px;
+      right: 10px;
+      width: 32px;
+      height: 32px;
+      font-size: 16px;
+  }
+  
+  .slider-arrow {
+      width: 32px;
+      height: 32px;
+      font-size: 16px;
+  }
+  
+  .slider-dots .dot {
+      width: 8px;
+      height: 8px;
+  }
 }
