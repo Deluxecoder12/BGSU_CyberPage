@@ -106,15 +106,16 @@ background-color:white;
   }
   
   .slide img {
-      max-height: 50vh;
+      max-height: 60vh;
   }
   
   .closeModalbtn {
-      top: 10px;
+      top: 5px;
       right: 10px;
       width: 32px;
       height: 32px;
       font-size: 16px;
+      z-index: 1001;
   }
   
   .slider-arrow {
