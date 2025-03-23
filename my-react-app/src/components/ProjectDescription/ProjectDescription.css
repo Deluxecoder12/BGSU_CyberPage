@@ -94,6 +94,7 @@
     .project-description-image-container {
       height: 40vh;
       min-height: 400px;
+      max-width: fit-content;
     }
   
     .project-description-card {

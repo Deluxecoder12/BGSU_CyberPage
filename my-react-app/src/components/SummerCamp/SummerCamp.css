@@ -59,8 +59,9 @@ p{
     font-size:16px;
     font-weight:300;
     line-height:1.65;
-
 }
+
+p
 
 .wrapped-box{
   box-sizing:border-box;
