@@ -36,6 +36,7 @@ const Promotions = () => {
       image:CyberGuardians,
       date:'June 2024',
       alt:'Cyberguardians image',
+      description: 'BG CyberGuardians is a summer camp for high school students (Grade 8 to 11)',
       carouselImages: [CyberGuardiansImage2, CyberGuardiansImage1, CyberGuardiansImage3, CyberGuardiansImage4,
         CyberGuardiansImage5, CyberGuardiansImage6
       ]
@@ -46,6 +47,7 @@ const Promotions = () => {
       image:Educyberworkshop,
       date:'June 2024',
       alt:'Educyber workshop image',
+      description: 'EduCyber Workshop is to help the local high chool teachers prepare cybersecurity education material.',
       carouselImages: [EducyberImage1, EducyberImage2, EducyberImage3,
         EducyberImage4, EducyberImage5, EducyberImage6
       ]
@@ -56,6 +58,7 @@ const Promotions = () => {
       image:Cyberedconnect,
       date:'February 2025',
       alt:'Cybered connect works image',
+      description: 'CyberEd Connect Workshop is to connect the local employers, high school teachers, and government officials.',
       carouselImages: [CyberedImage1, CyberedImage2, CyberedImage3,
         CyberedImage4
       ]
@@ -66,6 +69,7 @@ const Promotions = () => {
       image:CyberFuture,
       date:'March 2025',
       alt:'CyberFuture spring camp image',
+      description: 'CyberFuture Spring Camp is to engage middle school students in cyber security activities.',
       carouselImages:[CyberFuture, CyberFuture2]
     }
   ]
@@ -98,11 +102,17 @@ const Promotions = () => {
       {events.map((event) => (
         <div key={event.id} className="event-box" onClick={ () => handleEventClick(event)}>
           <img src={event.image}  alt={event.alt} className="event-image" />
-         
-            <h3 className="event-name">{event.name}
-            
-            </h3>
-            <div className="university-news-badge">{event.date}</div>
+
+          <div className="event-overlay">
+            <div className="overlay-content">
+              <h3 className="event-name">{event.name}</h3>
+              <p className="event-description">
+                {event.description || "Learn more about this exciting event by clicking!"}
+              </p>
+            </div>
+          </div>
+          
+          <div className="university-news-badge">{event.date}</div>
     
         </div>
       ))}

@@ -13,11 +13,12 @@
     min-height: fit-content;
     margin: 0 auto;
     background-color:whitesmoke;
-    padding:1rem 1rem 1.5rem 1rem;
+    padding:1rem 0 1.5rem 0;
     border-radius:2%;
     overflow: hidden;
     user-select: none;
     cursor: grab;
+    box-sizing: content-box;
 }
 
 .carousel-container:active {

@@ -1,23 +1,23 @@
 .promotions-container {
-    width: 100%;
+    width: auto;
     margin: 0 auto;
-    padding: 20px;
-  }
+    padding: 0 20px 0 100px;
+}
 
-  .Promotions-section-title {
+.Promotions-section-title {
     margin: 0;
     margin-bottom: 3rem;
     text-align: left;
     font-size: 2.5rem;
 }
   
- .event-grid{
+.event-grid{
   display:flex;
   flex-wrap:wrap;
   gap:30px;
- }
+}
 
- .event-box{
+.event-box{
   width:16em;
   height:16em;
   border-radius:12px;
@@ -29,38 +29,58 @@
   background-position:center;
   text-align:center;
   transition: 0.3s ease;
+}
 
- 
- }
-
- .event-box:hover{
+.event-box:hover{
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
- }
+}
 
- .event-image{
+.event-overlay {
+  position: absolute;
+  bottom: -80%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(79, 44, 29, 0.75);
+  color: white;
+  transition: bottom 0.8s ease;
+  z-index: 1;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  bottom: 60%;
+}
+
+.event-box:hover .event-overlay {
+  bottom: 0;
+}
+
+.event-image{
   width:100%;
   border-radius:12px;
   height:100%;
   cursor:pointer;
-  
- }
-
+}
 
 .event-name {
-  position: absolute; 
-    bottom: -20px; 
-    left: 0; 
-    width: 100%; 
-    color: white; 
-    font-weight: 600;
-    padding: 20px 0px; 
-    background-color:rgba(79, 44, 29, 0.75); 
-    z-index: 2; 
-    text-decoration-thickness:1px;
-    text-underline-offset:2px;
-    text-decoration:underline #F5C163;
+  position: relative;  
+  width: 100%; 
+  color: white; 
+  font-weight: 600;
+  z-index: 2; 
+  text-decoration-thickness:1px;
+  text-underline-offset:2px;
+  text-decoration:underline #F5C163;
+}
 
+.event-description {
+  width: auto;
+  color: white;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .university-news-badge {
@@ -72,6 +92,7 @@
   padding: 5px 10px 5px 10px;
   border-radius: 0px 12px 0px 12px; 
   font-size: 0.8rem;
+  z-index: 2;
 }
 
 /* Media Queries for Tablets (768px - 1024px) */
@@ -139,7 +160,8 @@
 /* Media Queries for Mobile Phones (up to 479px) */
 @media (max-width: 479px) {
   .promotions-container {
-    width:90%;
+    width:100%;
+    padding: 0;
   }
   .Promotions-section-title {
     font-size: 1.5rem;

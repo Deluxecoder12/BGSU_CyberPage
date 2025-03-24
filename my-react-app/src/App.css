@@ -1,5 +1,5 @@
 .App {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   background-color: #fff;
   font-family: Arial, sans-serif;
@@ -8,20 +8,18 @@
 /* Header Styling */
 .page-header {
   width: 100%;
-  margin-left: calc(-50vw + 50%);
   background-color: #FE5000; /* BGSU Orange */
   color: white;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .header-top {
-  max-width: 95%;
-  margin: 0;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 15px 20px;
-  gap: 20px;
+  box-sizing: border-box;
 }
 
 .separator {
@@ -31,7 +29,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%; /* Take full height of parent */
+  height: 100%;
+  margin: 0 1rem;
 }
 
 .bgsu-logo{
@@ -53,13 +52,12 @@
 }
 
 .main-nav {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
   background-color: #4F2C1D; /* BGSU Brown */
 }
 
 .main-nav .nav-container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -67,28 +65,9 @@
   padding: 10px 20px;
 }
 
-/* Transition P.D. - Sponsor */
-.section-divider{
-  height: 1rem;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  background:#FE5000;
-  max-width: fit-content;
-}
-
-/* Sponser section */
-.sponsers{
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  background-color: #FE5000;
-  margin-bottom: 20px;
- 
-}
-
 /* Footer */
 footer {
   width: 100%;
-  margin-left: calc(-50vw + 50%);
   color: white;
 }
 
@@ -114,7 +93,9 @@ footer {
 }
 
 .footer-support{
-  width: 95%;
+  width: 100%;
+  padding-left: 100px;
+  box-sizing: border-box;
 }
 
 .university-info {
@@ -178,7 +159,7 @@ footer {
 .footer-report {
   background-color: #4F2C1D;
   padding: 20px 0;
-  max-width: 97%;
+  width: 100%;
 }
 
 .report-container {
@@ -262,7 +243,8 @@ footer {
   width: 100%;
   min-width: fit-content;
   padding: 10px;
-  margin: 3rem 0;
+  margin-bottom: 3rem;
+  box-sizing: border-box;
 }
 
 .activities ul {
@@ -301,6 +283,8 @@ footer {
 .resources{
   margin-bottom: 2rem;
   min-height: min-content;
+  box-sizing: border-box;
+  padding: 20px 0 50px 100px
 }
 
 /* Back navigation for sub-pages */
@@ -325,6 +309,7 @@ footer {
 .collaborator{
   margin-top:2rem;
   margin-bottom:3rem;
+  margin-left: 100px;
 }
 
 
@@ -337,13 +322,12 @@ footer {
     flex-direction:column;
   }
   .bgsu-logo{
-    width:5rem;
+    width:10rem;
   }
   .separator{
-    display:none;
+    display: none;
   }
-  .title-large{
-    font-size:0.9rem;
+  .title-large::before{
     padding: 0 5px;
     text-align:center;
   }
@@ -356,6 +340,15 @@ footer {
 
   .main-nav{
     width: 100%;
+  }
+
+  .resources, .collaborator, .footer-support{
+    padding: 0;
+    margin: 0;
+  }
+
+  .collaborator, .footer-support{
+    padding: 5%;
   }
 }
 
@@ -413,12 +406,6 @@ footer {
   .title-large {
     font-size: 1.1rem;
     padding-top:20px;
-  }
-  .resources{
-    padding-left:20px;
-  }
-  .collaborator{
-    padding-left:20px;
   }
   
 }
