@@ -1,5 +1,5 @@
 import React from 'react';
-import backgroundImage from '../../images/CODE4hermentors-web.jpg';
+import ComputerSciencedept from '../../images/ComputerScience Dept.jpg';
 import './Resources.css';
 
 function Resources() {
@@ -38,7 +38,7 @@ function Resources() {
                 >
                   <div className="resources-card-media">
                     <img
-                      src={backgroundImage}
+                      src={ComputerSciencedept}
                       alt={item.name}
                       className="resources-card-img"
                     />
