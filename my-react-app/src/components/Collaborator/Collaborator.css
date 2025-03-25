@@ -77,12 +77,12 @@
 
   .partners-container {
     gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .tsection-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     padding: 15px 10px 25px 10px;
   }
