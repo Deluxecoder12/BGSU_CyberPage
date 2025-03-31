@@ -11,7 +11,7 @@ const  TestCollaborator= () =>{
       count: 1,
       preview: "Ohio Deputy CISO",
       bgClass: "government-section",
-      partners: ["State of Ohio",'OHIO CYBER RANGE INSTITUTE'],
+      partners: ["State of Ohio"],
 
     },
     "Industry Partners": {
@@ -49,6 +49,13 @@ const  TestCollaborator= () =>{
         "EHOVE Career Center",
       ],
     },
+    "OCRI": {
+      icon: "🛡️",
+      count: 1,
+      preview: "Ohio's Cybersecurity Education Initiative",
+      bgClass: "ocri-section",
+      partners: ["Ohio Cyber Range Institute"],
+    }
     };
 
     const toggleSection = (section) =>{
