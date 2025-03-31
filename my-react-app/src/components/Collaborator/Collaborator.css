@@ -21,7 +21,7 @@
   margin-bottom:10px;
   border-radius:8px;
   cursor:pointer;
-  width:300px;
+  width:250px;
   transition:background 0.3s ease-in-out;
 }
 
@@ -35,6 +35,10 @@
 
 .education-section {
   background-color: #f0fff4;
+}
+
+.ocri-section {
+  background-color: #f0e6ff;
 }
 
 .tsection-header{

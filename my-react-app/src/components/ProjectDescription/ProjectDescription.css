@@ -2,6 +2,7 @@
     width: 100%;
     margin: 0;
     padding: 0;
+    overflow-x:hidden;
 }
   
 .project-description-image-container {
@@ -9,12 +10,14 @@
     height: 50vh;
     min-height: 600px;
     overflow: hidden;
+   
 }
   
 .project-full-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position:center;
 }
   
 .image-overlay {
@@ -108,6 +111,26 @@
       font-size: 1rem;
     }
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .project-description-image-container {
+      height: 50vh;
+      min-height: 500px;
+      width: 100%;
+      max-width: 100%;
+  }
+  
+  .project-full-image {
+      width: 100vw;
+      height: 100%;
+  }
+  
+  .project-description-card {
+     
+      max-width: none;
+  }
+}
+
   
 @media (max-width: 768px) {
     .project-description-image-container {
@@ -116,9 +139,7 @@
     }
   
     .project-description-card {
-      width: 90%;
-      right: 5%;
-      left: 5%;
+      
       transform: translateY(-50%);
     }
   
