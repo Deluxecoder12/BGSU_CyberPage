@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BGSU_CyberPage/static/css/main.e436066e.css",
-    "main.js": "/BGSU_CyberPage/static/js/main.c669597f.js",
+    "main.css": "/BGSU_CyberPage/static/css/main.de7640a5.css",
+    "main.js": "/BGSU_CyberPage/static/js/main.0f0bd288.js",
     "static/js/488.68521f19.chunk.js": "/BGSU_CyberPage/static/js/488.68521f19.chunk.js",
     "static/media/ComputerScience Dept.jpg": "/BGSU_CyberPage/static/media/ComputerScience Dept.f09b179be4ab4c34c598.jpg",
     "static/media/Educyber Image1.jpg": "/BGSU_CyberPage/static/media/Educyber Image1.a78cbd72436d0e305290.jpg",
@@ -19,6 +19,7 @@
     "static/media/Cyber guardian Image2.jpg": "/BGSU_CyberPage/static/media/Cyber guardian Image2.6935f809a736245bcdc8.jpg",
     "static/media/CyberFuture 2.jpg": "/BGSU_CyberPage/static/media/CyberFuture 2.80c1c05ff30dd6729622.jpg",
     "static/media/Educyber Image5.jpg": "/BGSU_CyberPage/static/media/Educyber Image5.e8191e3cbe4414b6d156.jpg",
+    "static/media/Lab-Banner-new.jpeg": "/BGSU_CyberPage/static/media/Lab-Banner-new.49f2191fc68a61b6e2a7.jpeg",
     "static/media/Educyber Image2.jpg": "/BGSU_CyberPage/static/media/Educyber Image2.577e701c3757a62a2dc8.jpg",
     "static/media/Cyberguardians.jpg": "/BGSU_CyberPage/static/media/Cyberguardians.f9c22380d35677802fff.jpg",
     "static/media/Educyber Image4.jpg": "/BGSU_CyberPage/static/media/Educyber Image4.5790b6bea07ebf176d51.jpg",
@@ -30,7 +31,6 @@
     "static/media/cybersecurity_workforce.jpg": "/BGSU_CyberPage/static/media/cybersecurity_workforce.996abcb8d8073464b964.jpg",
     "static/media/Cyber guardian Image3.jpg": "/BGSU_CyberPage/static/media/Cyber guardian Image3.5c77889d9732e25b0426.jpg",
     "static/media/module-2.jpg": "/BGSU_CyberPage/static/media/module-2.f3df88a45b9b103494d8.jpg",
-    "static/media/Lab-Banner.jpg": "/BGSU_CyberPage/static/media/Lab-Banner.20ae5497a04b0de81e16.jpg",
     "static/media/summer-academic-banner.jpg": "/BGSU_CyberPage/static/media/summer-academic-banner.9f8895a784dd17986a57.jpg",
     "static/media/2025module-1.jpg": "/BGSU_CyberPage/static/media/2025module-1.dc474be077e6ec21c128.jpg",
     "static/media/2025module-2.jpg": "/BGSU_CyberPage/static/media/2025module-2.1aeee33f82aaa4b36483.jpg",
@@ -43,12 +43,12 @@
     "static/media/2025module-3.png": "/BGSU_CyberPage/static/media/2025module-3.237975e54b3805239c6a.png",
     "static/media/bgsu-logo-rev.svg": "/BGSU_CyberPage/static/media/bgsu-logo-rev.c8be9954ac1c17b619d1198cf4d4e635.svg",
     "index.html": "/BGSU_CyberPage/index.html",
-    "main.e436066e.css.map": "/BGSU_CyberPage/static/css/main.e436066e.css.map",
-    "main.c669597f.js.map": "/BGSU_CyberPage/static/js/main.c669597f.js.map",
+    "main.de7640a5.css.map": "/BGSU_CyberPage/static/css/main.de7640a5.css.map",
+    "main.0f0bd288.js.map": "/BGSU_CyberPage/static/js/main.0f0bd288.js.map",
     "488.68521f19.chunk.js.map": "/BGSU_CyberPage/static/js/488.68521f19.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e436066e.css",
-    "static/js/main.c669597f.js"
+    "static/css/main.de7640a5.css",
+    "static/js/main.0f0bd288.js"
   ]
 }
