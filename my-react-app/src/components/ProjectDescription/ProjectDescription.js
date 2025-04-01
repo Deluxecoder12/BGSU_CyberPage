@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProjectDescription.css';
-import projectImage from '../../images/Lab-Banner.jpeg';
+import projectImage from '../../images/Lab-Banner-new.jpeg';
 
 function ProjectDescription() {
     return (
