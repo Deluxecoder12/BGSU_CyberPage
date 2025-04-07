@@ -14,12 +14,12 @@
 .event-grid{
   display:flex;
   flex-wrap:wrap;
-  gap:30px;
+  gap:90px;
 }
 
 .event-box{
-  width:16em;
-  height:16em;
+  width:21em;
+  height:21em;
   border-radius:12px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position:relative;
@@ -79,6 +79,7 @@
   width: auto;
   color: white;
   font-size: 1rem;
+  padding:0px 15px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }

@@ -36,7 +36,7 @@ const Promotions = () => {
       image:CyberGuardians,
       date:'June 2024',
       alt:'Cyberguardians image',
-      description: 'BG CyberGuardians is a summer camp for high school students (Grade 8 to 11)',
+      description: '5-day Cybersecurity summer camp for 8-10 graders',
       carouselImages: [CyberGuardiansImage2, CyberGuardiansImage1, CyberGuardiansImage3, CyberGuardiansImage4,
         CyberGuardiansImage5, CyberGuardiansImage6
       ]
@@ -47,7 +47,7 @@ const Promotions = () => {
       image:Educyberworkshop,
       date:'June 2024',
       alt:'Educyber workshop image',
-      description: 'EduCyber Workshop is to help the local high chool teachers prepare cybersecurity education material.',
+      description: 'one-day workshop to train high school teachers with cybersecurity materials to use in their classroom',
       carouselImages: [EducyberImage1, EducyberImage2, EducyberImage3,
         EducyberImage4, EducyberImage5, EducyberImage6
       ]
@@ -58,7 +58,7 @@ const Promotions = () => {
       image:Cyberedconnect,
       date:'February 2025',
       alt:'Cybered connect works image',
-      description: 'CyberEd Connect Workshop is to connect the local employers, high school teachers, and government officials.',
+      description: 'Cybersecurity education workshop that bridges the State of Ohio, Local industry leaders and Cybersecurity educators',
       carouselImages: [CyberedImage1, CyberedImage2, CyberedImage3,
         CyberedImage4
       ]
@@ -69,7 +69,7 @@ const Promotions = () => {
       image:CyberFuture,
       date:'March 2025',
       alt:'CyberFuture spring camp image',
-      description: 'CyberFuture Spring Camp is to engage middle school students in cyber security activities.',
+      description: '4 half-day Cybersecurity spring camp for 5-7 graders',
       carouselImages:[CyberFuture, CyberFuture2]
     }
   ]
